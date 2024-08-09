@@ -1,0 +1,182 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color:darkred;
+}
+
+.header{
+    background-color:darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-link{
+    list-style: none;
+}
+
+.header .nav-link li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.header .nav-link a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-link li a:hover{
+    color: gold;
+}
+
+.header .boton button{
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: darkred;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .boton button:hover{
+    background: white;
+    color: darkblue;
+    transform: scale(1.1);
+}
+
+/* Media queries para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .header {
+        background: darkred;
+        flex-direction: column;
+        height: auto;
+        padding: 10px 5%; /* Menos padding para pantallas pequeñas */
+    }
+
+    .header .nav-link li {
+        display: block; /* Los enlaces se muestran en bloque para apilarse verticalmente */
+        padding: 10px 0;
+    }
+
+    .header .nav-link {
+        margin-top: 10px;
+        text-align: center; /* Centrar los enlaces */
+    }
+
+    .header .boton {
+        margin-top: 10px;
+    }
+
+    .header .logo img {
+        display: none;
+    }
+
+    .header .logo::after {
+        content: '';
+        display: block;
+        height: 50px;
+        width: 50px;
+        background: url('../Imagenes/America.png') no-repeat center center; /* Reemplaza con la nueva imagen */
+        background-size: contain;
+    }
+
+    body{
+        background: white;
+    }
+
+    .header .nav-link li a:hover{
+        color: black;
+    }
+
+    .header .boton button{
+        
+        color: darkred;
+        background: white;
+    }
+
+    .header .boton button:hover{
+        
+        color: darkred;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        background: gold;
+        font-size: 16px; /* Reducir el tamaño de fuente para pantallas muy pequeñas */
+    }
+
+    .header {
+        background: white;
+        padding: 10px 2%; /* Menos padding en pantallas muy pequeñas */
+    }
+
+    .header .logo img {
+        display: none; /* Ajustar aún más el tamaño del logo */
+    }
+    .header .logo::after {
+        content: '';
+        display: block;
+        height: 50px;
+        width: 50px;
+        background: url('../Imagenes/colombia.png') no-repeat center center; /* Reemplaza con la nueva imagen */
+        background-size: contain;
+    }
+
+    .header .nav-link li {
+        
+        padding: 8px 0; /* Menos espacio entre enlaces */
+    }
+
+    .header .boton button {
+        padding: 7px 20px; /* Reducir el tamaño del botón */
+    }
+    .header .nav-link a{
+        
+        color:darkred;
+    }
+
+    .header .nav-link li a:hover{
+        color: darkblue;
+    }
+
+    .header .boton button{
+        
+        color: white;
+        background: darkred;
+    }
+    .header .boton button:hover{
+        
+        background-color: darkblue;
+        color: white;
+        
+    }
+    
+}

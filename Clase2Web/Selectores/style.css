@@ -1,0 +1,20 @@
+p::before{
+    content: "😀";
+}
+p::after{
+    content: "💖";
+}
+::placeholder{
+    color: salmon;
+
+}
+
+p:hover{
+    color: blue;
+}
+div p:nth-child(1){
+    color: green;
+}
+div p:nth-child(2):hover{
+    color: yellow;
+}

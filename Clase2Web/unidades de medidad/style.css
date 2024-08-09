@@ -1,0 +1,18 @@
+html{
+    font-size: 62.5%;
+}
+
+.primera-clase{
+    width: 200px;
+    height: 200px;
+    background: plum;
+}
+p{
+    font-size: 2rem;
+}
+
+.segunda-clase{
+    width: 100vw;
+    height: 400px;
+    background: greenyellow;
+}
